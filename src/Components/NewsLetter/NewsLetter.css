@@ -36,11 +36,11 @@
     color        : rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     background   : linear-gradient(60deg,
-            hsl(1deg, 96%, 55%),
-            hsl(216, 100%, 50%),
-            hsl(230deg, 100%, 45%),
+            hsl(21, 95%, 47%),
+            hsl(0, 100%, 50%),
+            hsl(322, 94%, 55%),
             hsl(240, 86%, 52%),
-            hsl(260deg, 100%, 55%),
+            hsla(260, 100%, 55%, 0.775),
             hsl(325deg, 100%, 48%));
     background-size: 600%;
     animation      : anime 15s linear infinite;
@@ -51,11 +51,11 @@
 }
 
 .btn-rainbow {
-    position  : absolute;
-    margin-top: -100px;
-    z-index   : -1;
-    filter    : blur(30px);
-    opacity   : 0.8;
+    position: absolute;
+
+    z-index: -1;
+    filter : blur(50px);
+    opacity: 0.8;
 }
 
 @keyframes anime {
