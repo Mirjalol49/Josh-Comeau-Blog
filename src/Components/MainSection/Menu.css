@@ -1,0 +1,36 @@
+.visually-hidden {
+  position: absolute;
+  width   : 1px;
+  height  : 1px;
+  margin  : -1px;
+  padding : 0;
+  overflow: hidden;
+  clip    : rect(0, 0, 0, 0);
+  border  : 0;
+}
+
+.list:hover .title {
+  color: #4433ff;
+}
+
+
+.avatar-img__box {}
+
+.avatar-img__floating {
+
+  width    : 140px;
+  height   : auto;
+  animation: floatUpDownAnimation 5s ease-in-out infinite;
+}
+
+@keyframes floatUpDownAnimation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}

@@ -1,11 +1,11 @@
 import Header from "./Components/Header/Header";
-import Hero from "./Components/HeroSection/Hero";
+import Menu from "./Components/MainSection/Menu";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
+      <Menu />
     </div>
   );
 }

@@ -12,24 +12,29 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*
   2. Remove default margin
 */
 * {
   margin: 0;
 }
+
 /*
   Typographic tweaks!
   3. Add accessible line-height
   4. Improve text rendering
 */
 body {
-  line-height: 1.5;
+  line-height           : 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  background-color: #c9e4f5;
+  font-family           : "Poppins", sans-serif;
+  font-weight           : 400;
+  background-color      : #c9e4f5;
+  color                 : #21232C;
+  letter-spacing        : 0.025em;
 }
+
 /*
   5. Improve media defaults
 */
@@ -39,9 +44,10 @@ video,
 canvas,
 a,
 svg {
-  display: block;
+  display  : block;
   max-width: 100%;
 }
+
 /*
   6. Remove built-in form typography styles
 */
@@ -51,6 +57,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /*
   7. Avoid text overflows
 */
@@ -62,17 +69,17 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  margin: 0;
+  margin       : 0;
 }
 
 ul {
   list-style: none;
-  padding: 0;
+  padding   : 0;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
+  margin   : 0 auto;
+  padding  : 0 15px;
+  width    : 100%;
   max-width: 1100px;
 }
