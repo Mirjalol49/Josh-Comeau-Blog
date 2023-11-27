@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="pb-8">
       <div className="container">
-        <div className="footer-box flex justify-between">
+        <div className=" footer-box flex justify-between">
           <div className="footer-box__start">
             <a
               className="text-2xl leading-9 tracking-tighter text-[#4433FF] font-medium"
@@ -44,7 +44,7 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div className="pl-5 mt-2">
+                <div className="pl-7 mt-2">
                   <div className="mb-2">
                     <a href="https://www.joshwcomeau.com/tutorials/animation/">
                       Animation

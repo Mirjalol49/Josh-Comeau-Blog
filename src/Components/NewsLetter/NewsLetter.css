@@ -71,3 +71,12 @@
         background-position: 0% 50%;
     }
 }
+
+.dark .name-input,
+.dark .email-input {
+    background-color: transparent;
+}
+
+.dark .newsletter-title {
+    color: white;
+}

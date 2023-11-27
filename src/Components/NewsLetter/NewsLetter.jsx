@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./NewsLetter.css";
 
-const NewsLetter = () => {
+const NewsLetter = ({ darkMode }) => {
+  useEffect(() => {
+    const root = document.documentElement;
+
+    root.style.setProperty("--text-color", darkMode ? "white" : "#21232C");
+    root.style.setProperty("--bg-color", darkMode ? "#0E141B" : "white");
+  }, [darkMode]);
+
   return (
-    <div className="flex w-[100%] max-w-[600px] pt-24 pb-16">
+    <div
+      className={` flex w-[100%] max-w-[600px] pt-24 pb-16 ${
+        darkMode ? "dark" : ""
+      }`}
+    >
       <div>
-        <h2 className="text-2xl text-[#21232C] font-bold leading-8 mb-4">
+        <h2 className=" newsletter-title text-2xl text-[#21232C] font-bold leading-8 mb-4">
           A front-end web development newsletter that sparks joy
         </h2>
         <p className="w-full">

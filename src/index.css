@@ -20,20 +20,40 @@
   margin: 0;
 }
 
-/*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
+/* Dark mode styles */
+:root {
+  --text-color   : #20222B;
+  --bg-color     : #C8E3F5;
+  --main-bg-color: white;
+}
+
+.dark {
+  --text-color   : white;
+  --bg-color     : #0E141B;
+  --main-bg-color: #0E141B;
+}
+
+body.dark {
+  --text-color   : white;
+  --bg-color     : #0E141B;
+  --main-bg-color: #0E141B;
+}
+
 body {
   line-height           : 1.5;
   -webkit-font-smoothing: antialiased;
   font-family           : "Poppins", sans-serif;
   font-weight           : 400;
-  background-color      : #c9e4f5;
-  color                 : #21232C;
+  background-color      : var(--bg-color);
+  color                 : var(--text-color);
   letter-spacing        : 0.025em;
 }
+
+
+
+
+
+
 
 /*
   5. Improve media defaults
