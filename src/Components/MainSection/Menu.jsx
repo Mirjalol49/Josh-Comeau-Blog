@@ -65,6 +65,7 @@ const Menu = ({ darkMode }) => {
               <h2 className="font-semibold pt-10 text-[#E60067] leading-7 tracking-[2px]">
                 RECENTLY PUBLISHED
               </h2>
+
               <ul>{BlogData.map(BlogItem)}</ul>
             </div>
             <div className="hero-section__end-box ">
@@ -136,7 +137,7 @@ const Menu = ({ darkMode }) => {
                   children={"Gatsby"}
                 />
                 <LinkButtons
-                  className={`bg-[#CCE9F8] p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
+                  className={` p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
                     darkMode
                       ? "bg-[#243A47] hover:bg-[#385A6E]"
                       : "bg-[#CCE9F8]"
@@ -145,7 +146,7 @@ const Menu = ({ darkMode }) => {
                   children={"Nextjs"}
                 />
                 <LinkButtons
-                  className={`bg-[#CCE9F8] p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
+                  className={` p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
                     darkMode
                       ? "bg-[#243A47] hover:bg-[#385A6E]"
                       : "bg-[#CCE9F8]"
@@ -154,6 +155,7 @@ const Menu = ({ darkMode }) => {
                   children={"Performance"}
                 />
               </div>
+
               <PopularContent />
             </div>
           </div>

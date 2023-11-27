@@ -1,10 +1,29 @@
-const BlogItem = ({ title, subtitle, context, link, btn }) => {
+import React from "react";
+
+const BlogItem = ({ title, subtitle, context, link, btn, img }) => {
   const h3MarginClass = subtitle ? "" : "mb-5";
+
+  const handleMouseEnter = (event) => {
+    const arrowImg = event.currentTarget.querySelector(".arrow-img");
+    if (arrowImg) {
+      arrowImg.style.visibility = "visible";
+    }
+  };
+
+  const handleMouseLeave = (event) => {
+    const arrowImg = event.currentTarget.querySelector(".arrow-img");
+    if (arrowImg) {
+      arrowImg.style.visibility = "hidden";
+    }
+  };
+
   return (
     <li
-      className="list my-10 transition duration-300 ease-in-out cursor-pointer"
+      className="list my-10 cursor-pointer"
       key={title}
       onClick={() => window.open(link, "_blank")}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <h3
         className={`title font-bold ${h3MarginClass} hover:text-blue-500 text-[22px] leading-[33.6px]`}
@@ -15,9 +34,19 @@ const BlogItem = ({ title, subtitle, context, link, btn }) => {
         {subtitle}
       </p>
       <p>{context}</p>
-      <a href={link} role="button" className="font-semibold mt-5">
-        {btn}
-      </a>
+      <div className="flex">
+        <a href={link} role="button" className="block font-semibold mt-5">
+          {btn}
+        </a>
+        <img
+          className="mt-4 ml-4 arrow-img"
+          src={img}
+          alt="arrow"
+          width={30}
+          height={30}
+          style={{ visibility: "hidden" }}
+        />
+      </div>
     </li>
   );
 };
