@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import Lightmode from "../../assets/images/icons/lightMode.svg";
 import Darkmode from "../../assets/images/icons/darkmode.svg";
 
-import "./Header.css";
-
 const Header = ({ toggleDarkMode }) => {
   const [darkMode, setDarkMode] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +31,9 @@ const Header = ({ toggleDarkMode }) => {
       } ${isScrolled ? "hidden" : ""}`}
     >
       <div className="container">
+        {/* Main box for header */}
         <div className="main-header__wrapper flex align-middle justify-between">
+          {/* This first box, this div is responsible for holding logo and links */}
           <div className="main-header__start-wrapper flex items-center">
             <a
               className="main-header__logo-link text-[30px] tracking-tighter text-[#4433FF] font-medium"
@@ -83,6 +83,7 @@ const Header = ({ toggleDarkMode }) => {
             </nav>
           </div>
 
+          {/* This is second box, this div is responsible for holding darkmode button */}
           <div className="main-header__end-wrapper flex items-center">
             <button
               className="main-header__lightmode-btn mr-5"

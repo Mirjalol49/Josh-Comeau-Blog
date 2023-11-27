@@ -57,7 +57,9 @@ const Menu = ({ darkMode }) => {
       </svg>
       <section className="hero-section bg-white ">
         <div className="container">
+          {/* This is the main box that holds two boxes to flex  */}
           <div className="hero-section__main-box flex justify-between">
+            {/* This is first box, it is holding recently published posts */}
             <div className="hero-section__start-box  w-[626px]">
               <h1 className="visually-hidden">
                 Josh Comeau this is an interactive blog
@@ -65,9 +67,11 @@ const Menu = ({ darkMode }) => {
               <h2 className="font-semibold pt-10 text-[#E60067] leading-7 tracking-[2px]">
                 RECENTLY PUBLISHED
               </h2>
-
+              {/* Here we are looping the data and displaying to screen */}
               <ul>{BlogData.map(BlogItem)}</ul>
             </div>
+
+            {/* This is second box, it is holding Top categries links */}
             <div className="hero-section__end-box ">
               <h2 className="font-semibold pt-10 pl-7 text-[#E60067] leading-7 tracking-[2px] mb-10">
                 TOP CATEGORIES
@@ -155,12 +159,14 @@ const Menu = ({ darkMode }) => {
                   children={"Performance"}
                 />
               </div>
-
+              {/* This displays popular posts */}
               <PopularContent />
             </div>
           </div>
         </div>
       </section>
+
+      {/* This is newsletter section */}
       <section className="down-main__shadow  newsletter-section bg-white">
         <div className="container">
           <div className="flex justify-between align-middle w-full max-w-[800px]">

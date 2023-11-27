@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <footer className="pb-8">
       <div className="container">
+        {/* Footer main box in order to flex */}
         <div className=" footer-box flex justify-between">
+          {/* This one this first box */}
           <div className="footer-box__start">
             <a
               className="text-2xl leading-9 tracking-tighter text-[#4433FF] font-medium"
@@ -19,7 +21,10 @@ const Footer = () => {
               © 2020-present Joshua Comeau. All Rights Reserved.
             </p>
           </div>
+
+          {/* This one is second box */}
           <div className="footer-box__end flex justify-between w-full max-w-[400px]">
+            {/* This div responsible for holding Tutorials links */}
             <div>
               <p className="text-[#5A6072] text-sm leading-6">Tutorials</p>
               <div className="flex justify-between flex-wrap w-full max-w-[250px]">
@@ -68,6 +73,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+
+            {/* This div is responsible for holding Links */}
             <div>
               <p className="text-[#5A6072] text-sm leading-6">Links</p>
               <ul className="mt-2">
