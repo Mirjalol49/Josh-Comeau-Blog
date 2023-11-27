@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Lightmode from "../../assets/images/icons/lightMode.svg";
 import Darkmode from "../../assets/images/icons/darkmode.svg";
-import Rss from "../../assets/images/icons/rss.svg";
+
 import "./Header.css";
 
 const Header = ({ toggleDarkMode }) => {
@@ -44,22 +44,38 @@ const Header = ({ toggleDarkMode }) => {
             <nav className="main-header__nav">
               <ul className="main-header__list flex justify-between  items-center w-96 mt-1 ml-16">
                 <li className="main-header__item">
-                  <a className="main-header__nav-link" href="#link">
+                  <a
+                    className="main-header__nav-link"
+                    href="https://www.joshwcomeau.com/latest/"
+                    target="blank"
+                  >
                     Latest
                   </a>
                 </li>
                 <li className="main-header__item">
-                  <a className="main-header__nav-link" href="#link">
+                  <a
+                    className="main-header__nav-link"
+                    href="https://www.joshwcomeau.com/tutorials/"
+                    target="blank"
+                  >
                     Posts
                   </a>
                 </li>
                 <li className="main-header__item">
-                  <a className="main-header__nav-link" href="#link">
+                  <a
+                    className="main-header__nav-link"
+                    href="https://www.joshwcomeau.com/goodies/"
+                    target="blank"
+                  >
                     Goodies
                   </a>
                 </li>
                 <li className="main-header__item">
-                  <a className="main-header__nav-link" href="#link">
+                  <a
+                    className="main-header__nav-link"
+                    href="https://www.joshwcomeau.com/courses/"
+                    target="blank"
+                  >
                     Courses
                   </a>
                 </li>
