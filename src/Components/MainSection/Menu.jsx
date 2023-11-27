@@ -91,7 +91,7 @@ const Menu = ({ darkMode }) => {
                 )}
 
                 <LinkButtons
-                  className={`bg-[#CCE9F8] p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
+                  className={` p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
                     darkMode
                       ? "bg-[#243A47] hover:bg-[#385A6E]"
                       : "bg-[#CCE9F8]"
@@ -101,7 +101,7 @@ const Menu = ({ darkMode }) => {
                 />
 
                 <LinkButtons
-                  className={`bg-[#CCE9F8] p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
+                  className={` p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
                     darkMode
                       ? "bg-[#243A47] hover:bg-[#385A6E]"
                       : "bg-[#CCE9F8]"
@@ -110,7 +110,7 @@ const Menu = ({ darkMode }) => {
                   children={"Animation"}
                 />
                 <LinkButtons
-                  className={`bg-[#CCE9F8] p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
+                  className={` p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
                     darkMode
                       ? "bg-[#243A47] hover:bg-[#385A6E]"
                       : "bg-[#CCE9F8]"
@@ -119,7 +119,7 @@ const Menu = ({ darkMode }) => {
                   children={"Css"}
                 />
                 <LinkButtons
-                  className={`bg-[#CCE9F8] p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
+                  className={`p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
                     darkMode
                       ? "bg-[#243A47] hover:bg-[#385A6E]"
                       : "bg-[#CCE9F8]"
@@ -127,7 +127,7 @@ const Menu = ({ darkMode }) => {
                   children={"Carrer"}
                 />
                 <LinkButtons
-                  className={`bg-[#CCE9F8] p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
+                  className={` p-3 rounded-xl mr-2 mb-2 font-medium hover:scale-105 ${
                     darkMode
                       ? "bg-[#243A47] hover:bg-[#385A6E]"
                       : "bg-[#CCE9F8]"
